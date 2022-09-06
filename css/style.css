@@ -15,13 +15,9 @@
 }
 
 body {
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
   color: white;
   cursor: default;
-  background: #000;
+  background: #fff;
 }
 
 .none {
@@ -143,7 +139,6 @@ svg path {
 }
 
 .header {
-  position: relative;
   padding-top: 32px;
 }
 .header__menu {
@@ -190,6 +185,10 @@ svg path {
   }
 }
 
+.home-page {
+  position: relative;
+}
+
 .bg-img {
   position: absolute;
   left: 0;
@@ -199,8 +198,79 @@ svg path {
   z-index: -1;
 }
 .bg-img img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.home {
+  padding-top: 129px;
+  padding-bottom: 50px;
+}
+.home__content {
+  max-width: 1021px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.home__twit {
+  width: 151px;
+  height: 124px;
+  margin-left: 220px;
+  margin-top: 71px;
+}
+.home__row {
+  display: flex;
+}
+.home__heading {
+  font-family: "Proxima Nova Rg";
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 55px;
+}
+.home__text {
+  margin-top: 12px;
+  font-family: "Proxima Nova Lt";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+}
+.home__btn {
+  margin-top: 44px;
+  border-radius: 4px;
+  background: #FF8B00;
+  font-family: "Proxima Nova Rg";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 45px;
+  position: relative;
+  width: 174px;
+  height: 53px;
+}
+.home__btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.home__find-more {
+  margin-top: 135px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.home__find-more span {
+  font-family: "Proxima Nova Rg";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+.home__find-more a {
+  margin-top: 19px;
+  max-width: 62px;
+  max-height: 71px;
+  margin-right: auto;
+  margin-left: auto;
 }
