@@ -1,0 +1,37 @@
+.benefit {
+    
+    &__content {
+        padding-top: 133px;
+        padding-bottom: 131px;
+        color: $purple;
+        display: flex;
+        justify-content:space-around;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__block {
+        text-align: center;
+    }
+
+    ._center {
+        margin-right: 92px;
+        margin-left: 92px;
+    }
+
+    &__name {
+        @include h3fonts();
+        line-height: 68px;
+    }
+
+    &__text {
+        margin-top: 14px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+

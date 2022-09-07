@@ -6,6 +6,7 @@ $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 $orange: #FF8B00;
+$purple: #7050E5;
 
 ._container {
     max-width: $maxWidthContainer + px;
@@ -19,8 +20,18 @@ $orange: #FF8B00;
     }
 }
 
+@mixin h3fonts() {
+    font-family: 'Proxima Nova Rg';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: $purple;
+}
+
 @import "_main";
 @import "_reset";
 @import "_header";
 @import "_home";
+@import "_benefit";
+@import "_wwd";
 
