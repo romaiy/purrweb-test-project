@@ -1,0 +1,156 @@
+.contacts {
+    background: #232323;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    z-index: 0;
+    position: relative;
+    &__content {
+        max-width: 1283px;
+        padding: 0px 10px;
+        
+    }
+
+    &__row {
+        display: flex;
+        justify-content:space-between;   
+    }
+
+    &__heading {
+        color: #FFFFFF;
+        padding-top: 8px;
+        font-family: 'Proxima Nova Rg';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 55px;
+        z-index: 2;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 32px;
+        padding-left: 3px;
+        width: 675px;
+        z-index: 2;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            span {
+                margin-bottom: 8px;
+                padding-left: 4px;
+                font-family: 'Proxima Nova Lt';
+                font-weight: 600;
+                font-size: 13px;
+            }
+
+            li {
+                width: 308px;
+                margin-right: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            li + li {
+                width: 312px;
+                margin-right: 0;
+            }
+
+            li + li + li {
+                width: 640px;
+            }
+        }
+    }
+
+    &__btn {
+        @extend .product-spotlight__btn;
+        width: 201px;
+        height: 53px;
+        padding: 0;
+    }
+
+    &__name {
+        font-family: 'Proxima Nova Rg';
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: -0.02666em;
+        color: #FFFFFF;
+        margin-bottom: 28px;
+    }
+
+    input {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 7px;
+        color: #2E2E2E;
+        padding: 13px 9px;
+        border: 1px solid #D2D6DA;
+        &:focus {
+            border: 1px solid #292929;
+            color: #000000;
+        }
+    }
+
+    #fname {
+        background: #FFFFFF;
+        border-radius: 8px;
+        width: 308px;
+        height: 40px;
+        box-sizing: border-box;
+        margin-bottom: 28px;    
+    }
+    #lname {
+        @extend #fname;
+        width: 312px;
+    }
+    #mail {
+        @extend #fname;
+        width: 640px;
+        margin-right: 0;
+    }
+    #message {
+        @extend #fname;
+        @extend input;
+        width: 640px;
+        height: 96px;
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    &__big-gradient {
+        width: 746.86px;
+        height: 757.17px;
+        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+        opacity: 0.33;
+        filter: blur(250px);
+        border-radius: 373.431px;
+        transform: rotate(-122.79deg);
+        z-index: 1;
+        position: absolute;
+        top: -304px;
+        left: -50px;
+    }
+
+    &__small-gradient {
+        width: 472.1px;
+        height: 478.61px;
+        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+        opacity: 0.3;
+        filter: blur(250px);
+        border-radius: 236.048px;
+        transform: rotate(5.78deg);
+        position: absolute;
+        z-index: 1;
+        top: 380px;
+        left: 1040px;
+    }
+
+}
+
+.end-line {
+    height: 98px;
+    background: #FFFFFF;
+    z-index: 2;
+}

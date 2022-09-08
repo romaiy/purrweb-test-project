@@ -1,8 +1,8 @@
 ._container {
-  max-width: 1152px;
+  max-width: 993px;
   margin: 0 auto;
 }
-@media (max-width: 1164px) {
+@media (max-width: 1005px) {
   ._container {
     max-width: 750px;
   }
@@ -22,6 +22,10 @@ body {
 
 .none {
   display: none !important;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 .visually-hidden {
@@ -95,18 +99,18 @@ img, svg {
 }
 
 /* Form */
-input, textarea, button, select {
+input, .contacts #message, textarea, button, select {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
   background-color: transparent;
 }
 
-input::-ms-clear {
+input::-ms-clear, .contacts #message::-ms-clear {
   display: none;
 }
 
-button, input[type=submit] {
+button, input[type=submit], .contacts [type=submit]#message {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -114,7 +118,7 @@ button, input[type=submit] {
   cursor: pointer;
 }
 
-input:focus, input:active,
+input:focus, .contacts #message:focus, input:active, .contacts #message:active,
 button:focus, button:active {
   outline: none;
 }
@@ -311,8 +315,13 @@ svg path {
 
 .wwd {
   background: #F8F8F8;
-  padding-top: 154px;
+  padding-top: 139px;
   padding-bottom: 111px;
+}
+.wwd__header-container {
+  width: 997px;
+  display: flex;
+  justify-content: end;
 }
 .wwd__heading {
   font-family: "Proxima Nova Rg";
@@ -323,12 +332,10 @@ svg path {
   display: flex;
   justify-content: end;
   margin-bottom: 68px;
+  padding-top: 15px;
 }
-.wwd__heading::after {
-  content: url(/img/wwd/after.svg);
+.wwd span {
   margin-left: 19px;
-  line-height: 0;
-  height: 46px;
 }
 .wwd__list {
   display: flex;
@@ -337,19 +344,23 @@ svg path {
 .wwd__block {
   display: flex;
   flex-direction: column;
-  text-align: start;
+  justify-content: start;
   flex-wrap: wrap;
   margin-right: 98px;
   margin-bottom: 72px;
 }
 .wwd__block p {
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Rg";
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
   letter-spacing: -0.008em;
   color: #878787;
   margin-top: 8px;
+}
+.wwd__block img {
+  -o-object-fit: none;
+     object-fit: none;
 }
 .wwd ._first {
   margin-top: 3px;
@@ -364,17 +375,26 @@ svg path {
 .wwd ._second img {
   margin-bottom: 2px;
 }
+.wwd ._second p {
+  width: 281px;
+}
 .wwd ._third {
   margin-bottom: 0px;
+  margin-left: 2px;
 }
 .wwd ._third p {
   margin-top: 6px;
+  width: 271px;
 }
 .wwd ._fourth {
   margin-top: 9px;
+  margin-right: 100px;
 }
 .wwd ._fourth img {
   margin-bottom: 3px;
+}
+.wwd ._fourth p {
+  width: 241px;
 }
 .wwd ._fifty {
   margin-right: 0;
@@ -392,4 +412,196 @@ svg path {
   text-transform: uppercase;
   color: #7050E5;
   margin-top: 25px;
+}
+
+.product-spotlight {
+  padding-top: 123px;
+  padding-bottom: 97px;
+  z-index: 2;
+  background: #fff;
+}
+.product-spotlight__content {
+  max-width: 1323px;
+  padding: 0px 10px;
+}
+.product-spotlight__row {
+  display: flex;
+  justify-content: space-between;
+}
+.product-spotlight__column {
+  margin-top: 95px;
+  display: flex;
+  flex-direction: column;
+}
+.product-spotlight__heading {
+  font-family: "Proxima Nova Rg";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #7050E5;
+  margin-bottom: 15px;
+  scroll-behavior: smooth;
+}
+.product-spotlight__text {
+  font-family: "Proxima Nova Rg";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #878787;
+  margin-bottom: 38px;
+}
+.product-spotlight__btn, .contacts__btn {
+  border-radius: 4px;
+  background: #FF8B00;
+  font-family: "Proxima Nova Rg";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  width: 171px;
+  height: 44px;
+}
+.product-spotlight__btn span, .contacts__btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.contacts {
+  background: #232323;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  z-index: 0;
+  position: relative;
+}
+.contacts__content {
+  max-width: 1283px;
+  padding: 0px 10px;
+}
+.contacts__row {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__heading {
+  color: #FFFFFF;
+  padding-top: 8px;
+  font-family: "Proxima Nova Rg";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 55px;
+  z-index: 2;
+}
+.contacts__form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 32px;
+  padding-left: 3px;
+  width: 675px;
+  z-index: 2;
+}
+.contacts__form ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts__form ul span {
+  margin-bottom: 8px;
+  padding-left: 4px;
+  font-family: "Proxima Nova Lt";
+  font-weight: 600;
+  font-size: 13px;
+}
+.contacts__form ul li {
+  width: 308px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts__form ul li + li {
+  width: 312px;
+  margin-right: 0;
+}
+.contacts__form ul li + li + li {
+  width: 640px;
+}
+.contacts__btn {
+  width: 201px;
+  height: 53px;
+  padding: 0;
+}
+.contacts__name {
+  font-family: "Proxima Nova Rg";
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.02666em;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+}
+.contacts input, .contacts #message {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 7px;
+  color: #2E2E2E;
+  padding: 13px 9px;
+  border: 1px solid #D2D6DA;
+}
+.contacts input:focus, .contacts #message:focus {
+  border: 1px solid #292929;
+  color: #000000;
+}
+.contacts #fname, .contacts #message, .contacts #mail, .contacts #lname {
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 308px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 28px;
+}
+.contacts #lname {
+  width: 312px;
+}
+.contacts #mail {
+  width: 640px;
+  margin-right: 0;
+}
+.contacts #message {
+  width: 640px;
+  height: 96px;
+  margin-right: 0;
+  margin-bottom: 32px;
+}
+.contacts__big-gradient {
+  width: 746.86px;
+  height: 757.17px;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  opacity: 0.33;
+  filter: blur(250px);
+  border-radius: 373.431px;
+  transform: rotate(-122.79deg);
+  z-index: 1;
+  position: absolute;
+  top: -304px;
+  left: -50px;
+}
+.contacts__small-gradient {
+  width: 472.1px;
+  height: 478.61px;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  opacity: 0.3;
+  filter: blur(250px);
+  border-radius: 236.048px;
+  transform: rotate(5.78deg);
+  position: absolute;
+  z-index: 1;
+  top: 380px;
+  left: 1040px;
+}
+
+.end-line {
+  height: 98px;
+  background: #FFFFFF;
+  z-index: 2;
 }

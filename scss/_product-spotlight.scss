@@ -1,0 +1,65 @@
+.product-spotlight {
+    padding-top: 123px;
+    padding-bottom: 97px;
+    z-index: 2;
+    background: #fff;
+    &__content {
+        max-width: 1323px;
+        padding: 0px 10px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__column {
+        margin-top: 95px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        font-family: 'Proxima Nova Rg';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 55px;
+        color: $purple;
+        margin-bottom: 15px;
+        scroll-behavior: smooth;
+    }
+
+    &__text {
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+        color: #878787;
+        margin-bottom: 38px;
+    }
+
+    &__btn {
+        border-radius: 4px;
+        background: $orange;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        position: relative;
+        width: 171px;
+        height: 44px;
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__popup {
+    }
+
+}
+

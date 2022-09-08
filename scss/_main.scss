@@ -8,6 +8,10 @@ body {
     display: none !important;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 .visually-hidden {
     position: absolute;
     opacity: 0;

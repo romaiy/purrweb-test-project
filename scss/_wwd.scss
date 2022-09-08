@@ -1,8 +1,14 @@
 .wwd {
     background: #F8F8F8;
-    padding-top: 154px;
+    padding-top: 139px;
     padding-bottom: 111px;
     &__content {
+    }
+
+    &__header-container {
+        width: 997px;
+        display: flex;
+        justify-content: end;
     }
 
     &__heading {
@@ -10,13 +16,11 @@
         display: flex;
         justify-content: end;
         margin-bottom: 68px;
-        &::after {
-            content: url(/img/wwd/after.svg);
-            margin-left: 19px;
-            line-height: 0;
-            height: 46px;
-            
-        }
+        padding-top: 15px;
+    }
+
+    span {
+        margin-left: 19px;  
     }
 
     &__row {
@@ -31,18 +35,21 @@
     &__block {
         display: flex;
         flex-direction: column;
-        text-align: start;
+        justify-content: start;
         flex-wrap: wrap;
         margin-right: 98px;
         margin-bottom: 72px; 
         p {
-            font-family: 'Proxima Nova Lt';
+            font-family: 'Proxima Nova Rg';
             font-weight: 400;
             font-size: 15px;
             line-height: 19px;
             letter-spacing: -0.008em;
             color: #878787;
             margin-top: 8px;
+        }
+        img {
+            object-fit: none;
         }
     }
 
@@ -51,6 +58,7 @@
         margin-right: 100px;
         img {
             margin-bottom: 3px;
+            
         }
     }
 
@@ -59,19 +67,28 @@
         img {
             margin-bottom: 2px;
         }
+        p {
+            width: 281px;
+        }
     }
 
     ._third {
         margin-bottom: 0px;
+        margin-left: 2px;
         p {
             margin-top: 6px;
+            width: 271px;
         }
     }
     
     ._fourth {
         margin-top: 9px;
+        margin-right: 100px;
         img {
             margin-bottom: 3px;
+        }
+        p {
+            width: 241px;
         }
     }
 
