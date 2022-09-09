@@ -2,11 +2,9 @@
     background: #F8F8F8;
     padding-top: 139px;
     padding-bottom: 111px;
-    &__content {
-    }
 
     &__header-container {
-        width: 997px;
+        max-width: 997px;
         display: flex;
         justify-content: end;
     }
@@ -57,8 +55,7 @@
         margin-top: 3px;
         margin-right: 100px;
         img {
-            margin-bottom: 3px;
-            
+            margin-bottom: 3px;  
         }
     }
 

@@ -1,0 +1,185 @@
+.footer {
+    background: #363636;
+    padding-top: 56px;
+    padding-bottom: 49px;
+    position: relative;
+    &__content {
+        max-width: 1173px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__twit-card {
+        margin-right: 120px;
+    }
+
+    &__menu {
+        display: flex;
+    }
+
+    &__menu-block {
+        margin-right: 132px;
+    }
+
+    &__menu-block:last-child {
+        margin-right: 0;
+    }
+
+    &__list {
+        li {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Proxima Nova Lt';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 8px;
+            img {
+                margin-right: 7px;
+            }
+        }
+        .lh18 {
+            line-height: 18px;
+            display: flex;
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+        li:first-child {
+            display: flex;
+            flex-direction: row;
+            color: $orange;
+            font-family: 'Proxima Nova Rg';
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 20px;
+        }  
+    }
+    &__logo {
+        img {
+            position: absolute;
+            right: 32px;
+            bottom: 32px;
+        }
+        
+    }   
+}
+
+.footer {
+
+    &__twit-card {
+    }
+
+    &__top {
+        display: flex;
+        img {
+            background: #5634D1;
+            padding: 10px 10px 10px 11px;
+        }
+        
+    }
+
+    &__heading {
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        background-color: $purple;
+        padding-top: 11px;
+        padding-left: 16px;
+        padding-bottom: 11px;
+        width: 240px;
+    }
+
+    &__teg {
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 18px;
+        letter-spacing: 0.008em;
+        margin-bottom: 2px;
+    }
+
+    &__feed {
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.008em;
+
+    }
+
+    &__twit-block {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding-top: 20px;
+        padding-left: 31px;
+        padding-bottom: 19px;
+        padding-right: 50px;
+        li {
+            margin-bottom: 16px;
+            p {
+                font-family: 'Proxima Nova Rg';
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: -0.02em;
+                color: #999999;
+                margin-bottom: 2px;
+            }
+            a {
+                font-family: 'Proxima Nova Rg';
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                color: $purple;
+                margin-bottom: 4px;
+            }
+            span {
+                font-family: 'Proxima Nova Rg';
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 18px;
+                letter-spacing: -0.01em;
+                color: #555555;
+            }
+            .stroke {
+                font-family: 'Proxima Nova Rg';
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: -0.02em;
+                color: #999999;
+                margin-bottom: 2px;
+            }
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.cellar {
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    span {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    img {
+        width: 9px;
+        height: 10px;
+    }
+}

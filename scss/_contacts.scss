@@ -6,8 +6,7 @@
     position: relative;
     &__content {
         max-width: 1283px;
-        padding: 0px 10px;
-        
+        padding: 0px 10px;    
     }
 
     &__row {
@@ -118,35 +117,20 @@
         margin-right: 0;
         margin-bottom: 32px;
     }
-
-    &__big-gradient {
-        width: 746.86px;
-        height: 757.17px;
-        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
-        opacity: 0.33;
-        filter: blur(250px);
-        border-radius: 373.431px;
-        transform: rotate(-122.79deg);
-        z-index: 1;
+    &__bg-img {
         position: absolute;
-        top: -304px;
-        left: -50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        img {
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+        }
     }
-
-    &__small-gradient {
-        width: 472.1px;
-        height: 478.61px;
-        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
-        opacity: 0.3;
-        filter: blur(250px);
-        border-radius: 236.048px;
-        transform: rotate(5.78deg);
-        position: absolute;
-        z-index: 1;
-        top: 380px;
-        left: 1040px;
-    }
-
 }
 
 .end-line {

@@ -1,8 +1,7 @@
 .product-spotlight {
     padding-top: 123px;
     padding-bottom: 97px;
-    z-index: 2;
-    background: #fff;
+    background: rgb(255, 255, 255);
     &__content {
         max-width: 1323px;
         padding: 0px 10px;
@@ -57,9 +56,5 @@
             transform: translate(-50%, -50%);
         }
     }
-
-    &__popup {
-    }
-
 }
 
