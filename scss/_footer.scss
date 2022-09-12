@@ -1,5 +1,9 @@
 .footer {
     background: #363636;
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;
     padding-top: 56px;
     padding-bottom: 49px;
     position: relative;
@@ -38,13 +42,20 @@
             font-size: 14px;
             line-height: 20px;
             margin-bottom: 8px;
+            transition: all 0.2s;
             img {
                 margin-right: 7px;
+            }
+            &:hover {
+                color: $orange;
             }
         }
         .lh18 {
             line-height: 18px;
             display: flex;
+            &:hover {
+                color: white;
+            }
         }
         li:last-child {
             margin-bottom: 0;
@@ -64,16 +75,11 @@
             position: absolute;
             right: 32px;
             bottom: 32px;
-        }
-        
+        }   
     }   
 }
 
 .footer {
-
-    &__twit-card {
-    }
-
     &__top {
         display: flex;
         img {
@@ -81,9 +87,6 @@
             padding: 10px 10px 10px 11px;
         }
         
-    }
-
-    &__heading {
     }
 
     &__name {
@@ -111,7 +114,6 @@
         font-size: 14px;
         line-height: 18px;
         letter-spacing: -0.008em;
-
     }
 
     &__twit-block {
@@ -121,7 +123,7 @@
         padding-top: 20px;
         padding-left: 31px;
         padding-bottom: 19px;
-        padding-right: 50px;
+        width: 299px;
         li {
             margin-bottom: 16px;
             p {
@@ -167,11 +169,11 @@
 
 .cellar {
     background: #252525;
+    padding-top: 6px;
+    padding-bottom: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
     span {
         font-family: 'Raleway';
         font-weight: 500;
@@ -182,4 +184,57 @@
         width: 9px;
         height: 10px;
     }
+}
+
+@media (max-width: ($md4 + px)) {
+    .cellar {
+        padding-right: 37px;
+        padding-bottom: 38px;
+        span {
+            font-size: 8px;
+            line-height: 20px;
+            opacity: 0.8;
+        }
+        img {
+            width: 6px;
+            height: 8px;
+        }
+    }
+}
+
+@media (max-width: ($md4 + px)) {
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 80px;
+        &__content {
+            padding-left: 38px;
+            padding-right: 38px;
+        }
+        &__row {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__menu-block {
+            margin-right: 52px;
+        }
+    
+        &__menu-block:last-child {
+            margin-right: 0;
+        }
+        &__logo {
+            img {
+                bottom: 80px;
+                right: 144px;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    
 }

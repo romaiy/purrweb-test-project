@@ -9,20 +9,15 @@ $orange: #FF8B00;
 $purple: #7050E5;
 
 ._container {
-    
     max-width: $maxWidthContainer + px;
     margin: 0 auto;
-    @media (max-width: ($md1 + px)) {
+    @media (max-width: ($md2 + px)) {
         max-width: 750px;
     }
-    @media (max-width: ($md2 + px)) {
+    @media (max-width: ($md3 + px)) {
         max-width: none;
-        padding: 0 10px;
-    }
-    @media (max-width:992px) {
-        width: 100%;
-    }
-    
+        padding: 0px 10px;
+    }    
 }
 
 @mixin h3fonts() {
@@ -43,3 +38,24 @@ $purple: #7050E5;
 @import "_contacts";
 @import "_footer";
 
+@media (max-width: ($md1 + px)) {
+    .contacts__bg-img, .bg-img, .wwd, .footer{
+        min-width: ($maxWidthContainer+px);
+    }
+}
+@media (max-width: ($md2 + px)) {
+    .contacts__bg-img, .bg-img, .wwd, .footer{
+        min-width: ($md1 + px);
+    }
+}
+@media (max-width: ($md3 + px)) {
+    .contacts__bg-img, .bg-img, .wwd, .footer{
+        min-width: ($md2 + px);
+    }
+}
+@media (max-width: ($md4 + px)) {
+    .contacts__bg-img, .bg-img, .wwd, .footer{
+        min-width: none;
+        margin: 0 auto;
+    }
+} 

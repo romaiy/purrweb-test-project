@@ -4,7 +4,9 @@
     padding-bottom: 111px;
 
     &__header-container {
-        max-width: 997px;
+        max-width: 1017px;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
         justify-content: end;
     }
@@ -21,13 +23,9 @@
         margin-left: 19px;  
     }
 
-    &__row {
-    }
-
     &__list {
         display: flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;      
     }
 
     &__block {
@@ -109,3 +107,113 @@
     }
 }
 
+@media (max-width: ($md4 + px)) {
+    .wwd{
+        padding-top: 48px;
+        &__heading {
+            font-size: 34px;
+            line-height: 72px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        &__header-container {
+            display: flex;
+            justify-content: center;
+        }
+        span {
+            margin-left: 6px;  
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;      
+        }
+        &__block {
+            margin-right: 0;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        ._first {
+            margin: 0;
+            img {
+                margin-bottom: 0;  
+            }
+        }
+    
+    
+        ._third {
+            margin: 0;
+            p {
+                margin-top: 0px;
+                width: 271px;
+            }
+        }
+        
+        ._fourth {
+            margin: 0;
+            img {
+                margin-bottom: 0px;
+            }
+            p {
+                width: 241px;
+            }
+        }
+    
+        ._fifty {
+            margin-right: 0;
+            margin-top: 0;
+            img {
+                margin-bottom: 0px;
+            } 
+        }
+    }     
+}
+
+@media (max-width: 990px) {
+    .wwd{
+        &__list {
+            display: flex;
+            justify-content: space-around;     
+        }
+        &__block {
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        ._first {
+            margin: 0;
+            margin-bottom: 40px;
+            img {
+                margin-bottom: 0;  
+            }
+        }
+    
+    
+        ._third {
+            margin: 0;
+            margin-bottom: 40px;
+            p {
+                margin-top: 0px;
+                width: 271px;
+            }
+        }
+        
+        ._fourth {
+            margin: 0;
+            margin-bottom: 40px;
+            img {
+                margin-bottom: 0px;
+            }
+            p {
+                width: 241px;
+            }
+        }
+    
+        ._fifty {
+            margin: 0;
+            margin-bottom: 40px;
+            img {
+                margin-bottom: 0px;
+            } 
+        }
+    }
+}

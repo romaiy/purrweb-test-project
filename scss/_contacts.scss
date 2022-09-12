@@ -1,5 +1,10 @@
 .contacts {
-    background: #232323;
+    background-image: url("/img/Contact Us form.png");
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #464646;
     padding-top: 120px;
     padding-bottom: 120px;
     z-index: 0;
@@ -30,7 +35,7 @@
         flex-wrap: wrap;
         padding-right: 32px;
         padding-left: 3px;
-        width: 675px;
+        max-width: 675px;
         z-index: 2;
         ul {
             display: flex;
@@ -67,6 +72,10 @@
         width: 201px;
         height: 53px;
         padding: 0;
+        transition: all 0.2s;
+        &:hover {
+            background: #f1911a;
+        }
     }
 
     &__name {
@@ -124,6 +133,7 @@
         width: 100%;
         height: 100%;
         z-index: -1;
+
         img {
             background-size: cover;
             width: 100%;
@@ -137,4 +147,92 @@
     height: 98px;
     background: #FFFFFF;
     z-index: 2;
+}
+
+@media (max-width: (516px)) {
+    .contacts {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__content {
+            padding: 0px 28px;    
+        }
+        &__heading {
+            padding-top: 0px;
+            font-size: 34px;
+            line-height: 40px;
+            margin-bottom: 48px;
+        }
+        &__row {
+            display: flex;
+            justify-content:center;
+            flex-direction: column;   
+        }
+        &__name {
+            font-size: 20px;
+        }
+        #fname, #lname, #mail, #message {
+            width: 311px;
+            margin-bottom: 20px;
+        }
+        #message {
+            margin-bottom: 40px;
+        }
+        &__form {
+            flex-direction: column;
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    width: 311px;
+                    margin-right: 0px;
+                }
+    
+                li + li {
+                    width: 311px;
+                    margin-right: 0;
+                }
+    
+                li + li + li {
+                    width: 311px;
+                }
+            }
+        }
+    }  
+}
+
+@media (max-width: 990px) {
+    
+    .contacts{
+        &__content {
+            padding: 0px 28px;    
+        }
+        &__heading {
+            padding-top: 0px;
+            font-size: 40px;
+            line-height: 40px;
+        }
+        #fname, #lname, #mail, #message {
+            width: 311px;
+        }
+        &__form {
+            flex-direction: column;
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    width: 311px;
+                    margin-right: 0px;
+                }
+    
+                li + li {
+                    width: 311px;
+                    margin-right: 0;
+                }
+    
+                li + li + li {
+                    width: 311px;
+                }
+            }
+        }
+    }
 }
